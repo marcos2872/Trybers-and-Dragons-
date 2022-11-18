@@ -21,7 +21,7 @@ export default class Monster implements SimpleFighter {
     return this._lifePoints;
   }
 
-  attack(enemy: SimpleFighter): number {
+  attack(): number {
     return this._strength;
   }
 }
