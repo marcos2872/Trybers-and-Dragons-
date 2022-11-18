@@ -1,11 +1,8 @@
-import Archetype from '../Archetypes';
-
-export default abstract class Race extends Archetype {
+export default abstract class Race {
   private _name: string;
   private _dexterity: number;
 
   constructor(name: string, dexterity: number) {
-    super(name);
     this._name = name;
     this._dexterity = dexterity;
   }
