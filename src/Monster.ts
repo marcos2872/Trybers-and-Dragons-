@@ -1,19 +1,27 @@
-// import { SimpleFighter } from './Fighter';
+import { SimpleFighter } from './Fighter';
 
-// export default class Monster implements SimpleFighter {
-//   lifePoints: number;
-//   strength: number;
+export default class Monster implements SimpleFighter {
+  private _lifePoints: number;
+  private _strength: number;
 
-//   constructor(lifePoints: number, strength: number) {
-//     this.lifePoints = 85;
-//     this.strength = 63;
-//   }
+  constructor(lifePoints = 85, strength = 63) {
+    this._lifePoints = lifePoints;
+    this._strength = strength;
+  }
 
-//   attack(enemy: SimpleFighter): void {
-//     throw new Error('Method not implemented.');
-//   }
+  get lifePoints(): number { return this._lifePoints; }
+  get strength(): number { return this._strength; }
+  
+  receiveDamage(attackPoints: number): number {
+    if (attackPoints > 0) {
+      this._lifePoints -= attackPoints;
+      if (this._lifePoints <= 0) this._lifePoints = -1;
+      return this._lifePoints;
+    }
+    return this._lifePoints;
+  }
 
-//   receiveDamage(attackPoints: number): void {
-//     throw new Error('Method not implemented.');
-//   }
-// }
+  attack(enemy: SimpleFighter): number {
+    return this._strength;
+  }
+}
