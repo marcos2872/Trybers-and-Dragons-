@@ -1,13 +1,20 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Bem-vindo ao Projeto Trybers-and-Dragons
+Este projeto faz parte do curso da Trybe.
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Este projeto é a construção da estrutura de um jogo estilo RPG desenvolvido utilizando TypeScript.
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+Foram desenvolvidas as classes para padronizar os jogadores e seus archetipos e raças, os monstros e as estruturas de batalhas, incluindo a quantidade de energia, vida e outros atributos de cada personagem.
+
+Obrigado por ver meu projeto!
+
+# Como Rodar o Projeto
+para rosar o projeto e preciso ter o docker instalado na maquina.
+
+Para instalar no Linux rode: sudo apt install docker e sudo apt install docker-compose
+
+faça o clone: git clone https://github.com/marcos2872/Trybers-and-Dragons-.git
+ou faça o download do zip: https://github.com/marcos2872/Trybers-and-Dragons-/archive/refs/heads/main.zip
+
+abra a pasta do projeto e rode no terminal o comando: sudo docker-compose up -d<br />
+depois rode: sudo docker exec -it trybers_and_dragons bash<br />
+para executar os testes rode: npm test
